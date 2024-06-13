@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", sans-serif;
+  color: black;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(adi.jpg);
+  background-size: cover;
+}
+
+.nav {
+  height: 100vh;
+  width: 230px;
+  background-color: rgba(100, 104, 132, 0.951);
+  border: 2px solid white;
+  box-shadow: 5px -3px 6px lightblue;
+  border-radius: 9px;
+  position: fixed;
+  left: -240px;
+  transition: 0.5s linear;
+}
+
+#cb {
+  display: none;
+}
+
+.menu_logo {
+  position: absolute;
+  font-size: 55px;
+  left: 19px;
+  transition: all 0.5s linear;
+}
+
+.logo {
+  position: absolute;
+  left: 74px;
+  top: 12px;
+  font-size: 55px;
+}
+
+.c_logo {
+  position: absolute;
+  left: 200px;
+  top: 34px;
+  opacity: 1;
+}
+
+.c_logo span {
+  cursor: pointer;
+  transition: 0.5s linear;
+}
+
+.opt {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+}
+
+.opt ul li {
+  text-decoration: none;
+}
+
+.opt a {
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.opt span {
+  font-size: 25px;
+  padding-right: 4px;
+  padding-top: 15px;
+  line-height: 38px;
+}
+
+.apps ul {
+  position: absolute;
+  left: 45px;
+  top: 580px;
+}
+
+.apps ul i {
+  padding: 0 4px;
+  font-size: 21px;
+  opacity: 0.9;
+}
+
+.apps ul i:hover {
+  opacity: 1;
+  transform: scale(1.3);
+  color: white;
+}
+
+#cb:checked ~ .nav {
+  left: 0px;
+  top: 0px;
+}
+
+#cb:checked ~ .menu_logo {
+  opacity: 0;
+}
+
+.c_logo span:hover {
+  transform: scale(1.2);
+}
+
+.menu_logo:hover {
+  transform: scale(1.3);
+}
+
+.opt ul li:hover {
+  border-radius: 20px;
+  border: 2px solid white;
+  box-shadow: 0 2px white;
+}
